@@ -5,14 +5,11 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   text-align: center;
+  color: white;
   display: flex;
   flex-direction: column;
   min-height: 100%;
-}
-
-header {
-  padding: 20px;
-  background: rgba(10, 189, 227, 1);
+  background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(70,71,252,1) 100%);
 }
 
 #logo {
@@ -28,54 +25,19 @@ header {
 h2 {
   font-size: 2em;
   font-weight: 300;
+  margin-bottom: 40px;
 }
 
-.soon {
+.link {
   background-color: #ee5253;
   color: white;
   padding: 10px 20px;
   border-radius: 2px;
-  margin-top: 10px;
-}
-
-.recursos-lista {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 40px 0;
-}
-
-.recursos-item {
-  width: 100%;
-  max-width: 250px;
-  margin: 10px;
-}
-
-#mc_embed_signup input {
-  width: 100%;
-  max-width: 600px;
-  font-size: 2em;
-  font-weight: 300;
-  text-align: center;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 10px 0;
-}
-
-#mc_embed_signup .button {
-  font-size: 1.5em;
-  width: 200px;
-  padding: 10px 20px 12px;
-  margin-top: 10px;
-  background-color: #10ac84;
-  color: white;
-  border: 0;
-  border-radius: 2px;
+  text-decoration: none;
+  font-size: 1.3em;
 }
 
 footer {
   flex-shrink: 0;
   padding: 20px;
-  background-color: #576574;
-  color: white;
 }
