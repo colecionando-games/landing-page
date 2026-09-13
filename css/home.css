@@ -67,4 +67,37 @@ footer a {
 .social-links a {
   padding: 5px;
   text-decoration: none;
+  display: inline-block;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.2s ease;
 }
+
+.social-links a:hover {
+  transform: scale(1.2); 
+  filter: drop-shadow(0 0 6px rgba(0,212,255,1)); 
+}
+
+.social-links a::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) scale(0.8);
+  
+  background: linear-gradient(180deg, #FFDA00 0%, #FFB700 100%);
+  color: rgba(0, 0, 0, 0.65);
+  border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.85);
+  padding: 4px 8px;
+  font-size: 16px;
+  white-space: nowrap;
+  pointer-events: none;
+  
+  opacity: 0;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.social-links a:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
+
