@@ -63,3 +63,8 @@ footer a {
 .social-links {
   margin-top: 10px;
 }
+
+.social-links a {
+  padding: 5px;
+  text-decoration: none;
+}
